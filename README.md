@@ -40,10 +40,10 @@ Before you begin, ensure you have the following:
 ## Local Setup Instructions
 
 1. Clone the repository:
-   ```bash
+```bash
    git clone [https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git](https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git)
    cd sentimentAnalysis-with-Python-FlaskApp
-
+   
 ```
 
 2. Install dependencies (virtual environment recommended):
@@ -51,7 +51,6 @@ Before you begin, ensure you have the following:
 pip install -r requirements.txt
 
 ```
-
 
 3. Authenticate API Requests by setting your service account key:
 ```bash
