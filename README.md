@@ -45,19 +45,20 @@ Before you begin, ensure you have the following:
    cd sentimentAnalysis-with-Python-FlaskApp
 Install dependencies (virtual environment recommended):
 
-Bash
+
+```bash
 pip install -r requirements.txt
 Authenticate API Requests by setting your service account key:
 
-Bash
+```bash
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-key.json"
 Set up Cloud Storage Bucket variable:
 
-Bash
+```bash
 export CLOUD_STORAGE_BUCKET="your-unique-bucket-name"
 Run the application:
 
-Bash
+```bash
 python main.py
 Navigate to http://localhost:8080 in your web browser to test the application locally.
 
@@ -68,10 +69,11 @@ Open app.yaml and update the environment variables with your specific Cloud Stor
 
 Deploy the application using the Google Cloud CLI:
 
-Bash
+```bash
 gcloud app deploy
 Once the deployment finishes, view your live application:
 
-Bash
+```bash
 gcloud app browse
 ---
+```
