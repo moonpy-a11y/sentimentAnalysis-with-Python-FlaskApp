@@ -40,33 +40,38 @@ Before you begin, ensure you have the following:
 ## Local Setup Instructions
 
 1. Clone the repository:
-    git clone https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git
-    cd sentimentAnalysis-with-Python-FlaskApp
+   ```bash
+   git clone https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git
+   cd sentimentAnalysis-with-Python-FlaskApp
+Install dependencies (virtual environment recommended):
 
-2. Install dependencies (virtual environment recommended):
-    pip install -r requirements.txt
+Bash
+pip install -r requirements.txt
+Authenticate API Requests by setting your service account key:
 
-3. Authenticate API Requests by setting your service account key:
-    export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-key.json"
+Bash
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-key.json"
+Set up Cloud Storage Bucket variable:
 
-4. Set up Cloud Storage Bucket variable:
-    export CLOUD_STORAGE_BUCKET="your-unique-bucket-name"
+Bash
+export CLOUD_STORAGE_BUCKET="your-unique-bucket-name"
+Run the application:
 
-5. Run the application:
-    python main.py
-
+Bash
+python main.py
 Navigate to http://localhost:8080 in your web browser to test the application locally.
 
----
-
-## Google App Engine Deployment
-
+Google App Engine Deployment
 To deploy this application to Google Cloud, you will use the provided app.yaml configuration file.
 
-1. Open app.yaml and update the environment variables with your specific Cloud Storage bucket name.
+Open app.yaml and update the environment variables with your specific Cloud Storage bucket name.
 
-2. Deploy the application using the Google Cloud CLI:
-    gcloud app deploy
+Deploy the application using the Google Cloud CLI:
 
-3. Once the deployment finishes, view your live application:
-    gcloud app browse
+Bash
+gcloud app deploy
+Once the deployment finishes, view your live application:
+
+Bash
+gcloud app browse
+---
