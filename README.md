@@ -1,10 +1,68 @@
-# Sentiment Analysis with Python Flask
+# Face Sentiment Analysis App (Python Flask)
 
-This repository contains a Python Flask web application deployed to the Google App Engine Flexible environment. It utilizes Google Cloud APIs for Vision, Storage, and Datastore to analyze the sentiment (joy likelihood) of human faces in uploaded images.
+[TAG: PYTHON] | [TAG: FLASK] | [TAG: GOOGLE CLOUD] | [TAG: MACHINE LEARNING]
 
-## App UI Preview
+A Python Flask web application that analyzes the sentiment (joy likelihood) of human faces in uploaded images. Built for deployment on Google App Engine, this app leverages Google Cloud's AI and data storage services to process and catalog facial expressions.
 
-Here is a preview of the enhanced Bootstrap 5 User Interface:
+## [PREVIEW] App Interface
 
 ![App Preview](app_images/Screenshot%202026-07-11%20112202.png)
 
+---
+
+## [ARCHITECTURE] Features & Services
+
+* [FRONTEND] Responsive, modern UI built with HTML, Jinja2, and Bootstrap 5.
+* [COMPUTE] Hosted on Google App Engine (Flexible Environment).
+* [STORAGE] Uploaded image files are securely stored in Google Cloud Storage.
+* [DATABASE] Metadata (filename, upload timestamp, and sentiment analysis results) is logged in Google Cloud Datastore (NoSQL).
+* [API] Uses the Google Cloud Vision API for facial detection and sentiment analysis.
+
+---
+
+## [REQUIREMENTS] Prerequisites
+
+Before you begin, ensure you have the following:
+
+* A Google Cloud Project with an active billing account.
+* Google Cloud CLI (gcloud) installed and initialized.
+* Python 3.12+ installed.
+* The following APIs enabled in your Google Cloud Project:
+  - Cloud Vision API
+  - Cloud Datastore API
+
+---
+
+## [DEVELOPMENT] Local Setup Instructions
+
+1. Clone the repository:
+    git clone [https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git](https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git)
+    cd sentimentAnalysis-with-Python-FlaskApp
+
+2. Install dependencies (virtual environment recommended):
+    pip install -r requirements.txt
+
+3. Authenticate API Requests by setting your service account key:
+    export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-key.json"
+
+4. Set up Cloud Storage Bucket variable:
+    export CLOUD_STORAGE_BUCKET="your-unique-bucket-name"
+
+5. Run the application:
+    python main.py
+
+Navigate to http://localhost:8080 in your web browser to test the application locally.
+
+---
+
+## [DEPLOYMENT] Google App Engine
+
+To deploy this application to Google Cloud, you will use the provided app.yaml configuration file.
+
+1. Open app.yaml and update the environment variables with your specific Cloud Storage bucket name.
+
+2. Deploy the application using the Google Cloud CLI:
+    gcloud app deploy
+
+3. Once the deployment finishes, view your live application:
+    gcloud app browse
