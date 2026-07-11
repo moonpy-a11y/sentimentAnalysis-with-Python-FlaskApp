@@ -1,26 +1,30 @@
 # Face Sentiment Analysis App (Python Flask)
 
-[TAG: PYTHON] | [TAG: FLASK] | [TAG: GOOGLE CLOUD] | [TAG: MACHINE LEARNING]
+## Technology Stack & Badges
+[![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/)
+[![AI-Gemini](https://img.shields.io/badge/AI-Gemini-orange?style=flat&logo=google-gemini&logoColor=white)](https://deepmind.google/technologies/gemini/)
+[![Environment-Dev](https://img.shields.io/badge/Environment-Dev_UI-blueviolet?style=flat)](https://adk.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Python Flask web application that analyzes the sentiment (joy likelihood) of human faces in uploaded images. Built for deployment on Google App Engine, this app leverages Google Cloud's AI and data storage services to process and catalog facial expressions.
 
-## [PREVIEW] App Interface
+## App Interface Preview
 
 ![App Preview](app_images/Screenshot%202026-07-11%20112202.png)
 
 ---
 
-## [ARCHITECTURE] Features & Services
+## Architecture & Services
 
-* [FRONTEND] Responsive, modern UI built with HTML, Jinja2, and Bootstrap 5.
-* [COMPUTE] Hosted on Google App Engine (Flexible Environment).
-* [STORAGE] Uploaded image files are securely stored in Google Cloud Storage.
-* [DATABASE] Metadata (filename, upload timestamp, and sentiment analysis results) is logged in Google Cloud Datastore (NoSQL).
-* [API] Uses the Google Cloud Vision API for facial detection and sentiment analysis.
+* **Frontend:** Responsive, modern UI built with HTML, Jinja2, and Bootstrap 5.
+* **Compute:** Hosted on Google App Engine (Flexible Environment).
+* **Storage:** Uploaded image files are securely stored in Google Cloud Storage.
+* **Database:** Metadata (filename, upload timestamp, and sentiment analysis results) is logged in Google Cloud Datastore (NoSQL).
+* **API:** Uses the Google Cloud Vision API for facial detection and sentiment analysis.
 
 ---
 
-## [REQUIREMENTS] Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following:
 
@@ -33,10 +37,10 @@ Before you begin, ensure you have the following:
 
 ---
 
-## [DEVELOPMENT] Local Setup Instructions
+## Local Setup Instructions
 
 1. Clone the repository:
-    git clone [https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git](https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git)
+    git clone https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git
     cd sentimentAnalysis-with-Python-FlaskApp
 
 2. Install dependencies (virtual environment recommended):
@@ -55,7 +59,7 @@ Navigate to http://localhost:8080 in your web browser to test the application lo
 
 ---
 
-## [DEPLOYMENT] Google App Engine
+## Google App Engine Deployment
 
 To deploy this application to Google Cloud, you will use the provided app.yaml configuration file.
 
