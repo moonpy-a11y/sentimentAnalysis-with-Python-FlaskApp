@@ -1,12 +1,3 @@
-I see exactly where the formatting broke down! The code blocks (````bash`) were missing their closing backticks (`````), which caused everything after them to bleed together. The numbered lists and headers also lost their formatting at the bottom.
-
-Here is the fully fixed and correctly formatted Markdown.
-
-To ensure the formatting doesn't break again, **please use the Cloud Shell Editor** (the pencil icon) to paste this, rather than the terminal command line.
-
-### 1. Paste this into your `README.md` file using the Editor:
-
-```markdown
 # Face Sentiment Analysis App (Python Flask)
 
 ## Technology Stack & Badges
