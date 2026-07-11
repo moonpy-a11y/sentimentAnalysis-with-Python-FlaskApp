@@ -1,3 +1,12 @@
+I see exactly where the formatting broke down! The code blocks (````bash`) were missing their closing backticks (`````), which caused everything after them to bleed together. The numbered lists and headers also lost their formatting at the bottom.
+
+Here is the fully fixed and correctly formatted Markdown.
+
+To ensure the formatting doesn't break again, **please use the Cloud Shell Editor** (the pencil icon) to paste this, rather than the terminal command line.
+
+### 1. Paste this into your `README.md` file using the Editor:
+
+```markdown
 # Face Sentiment Analysis App (Python Flask)
 
 ## Technology Stack & Badges
@@ -41,39 +50,59 @@ Before you begin, ensure you have the following:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git
+   git clone [https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git](https://github.com/moonpy-a11y/sentimentAnalysis-with-Python-FlaskApp.git)
    cd sentimentAnalysis-with-Python-FlaskApp
-Install dependencies (virtual environment recommended):
 
+```
 
+2. Install dependencies (virtual environment recommended):
 ```bash
 pip install -r requirements.txt
-Authenticate API Requests by setting your service account key:
 
+```
+
+
+3. Authenticate API Requests by setting your service account key:
 ```bash
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-key.json"
-Set up Cloud Storage Bucket variable:
 
+```
+
+
+4. Set up Cloud Storage Bucket variable:
 ```bash
 export CLOUD_STORAGE_BUCKET="your-unique-bucket-name"
-Run the application:
 
+```
+
+
+5. Run the application:
 ```bash
 python main.py
-Navigate to http://localhost:8080 in your web browser to test the application locally.
 
-Google App Engine Deployment
-To deploy this application to Google Cloud, you will use the provided app.yaml configuration file.
+```
 
-Open app.yaml and update the environment variables with your specific Cloud Storage bucket name.
 
-Deploy the application using the Google Cloud CLI:
 
+Navigate to `http://localhost:8080` in your web browser to test the application locally.
+
+---
+
+## Google App Engine Deployment
+
+To deploy this application to Google Cloud, you will use the provided `app.yaml` configuration file.
+
+1. Open `app.yaml` and update the environment variables with your specific Cloud Storage bucket name.
+2. Deploy the application using the Google Cloud CLI:
 ```bash
 gcloud app deploy
-Once the deployment finishes, view your live application:
 
+```
+
+
+3. Once the deployment finishes, view your live application:
 ```bash
 gcloud app browse
----
+
 ```
+
