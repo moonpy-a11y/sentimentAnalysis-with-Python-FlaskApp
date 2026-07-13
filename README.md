@@ -4,7 +4,7 @@
 [![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/)
 [![AI-Gemini](https://img.shields.io/badge/AI-Gemini-orange?style=flat&logo=google-gemini&logoColor=white)](https://deepmind.google/technologies/gemini/)
 [![Environment-Dev](https://img.shields.io/badge/Environment-Dev_UI-blueviolet?style=flat)](https://adk.dev)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Apache-2.0](https://img.shields.io/badge/License-MIT-yellow.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 A Python Flask web application that analyzes the sentiment (joy likelihood) of human faces in uploaded images. Built for deployment on Google App Engine, this app leverages Google Cloud's AI and data storage services to process and catalog facial expressions.
 
